@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CA23A8112CD77D1C000C2366 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA23A8102CD77D1C000C2366 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CAD169C32CD74CAB00647FE2 /* MotionInsight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionInsight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA23A8112CD77D1C000C2366 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = MotionInsight;
 			packageProductDependencies = (
+				CA23A8102CD77D1C000C2366 /* ComposableArchitecture */,
 			);
 			productName = MotionInsight;
 			productReference = CAD169C32CD74CAB00647FE2 /* MotionInsight.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = CAD169BA2CD74CAB00647FE2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CA23A80F2CD77D1C000C2366 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CAD169C42CD74CAB00647FE2 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA23A80F2CD77D1C000C2366 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA23A8102CD77D1C000C2366 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA23A80F2CD77D1C000C2366 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAD169BB2CD74CAB00647FE2 /* Project object */;
 }
