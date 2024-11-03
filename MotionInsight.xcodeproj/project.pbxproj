@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CA23A8112CD77D1C000C2366 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA23A8102CD77D1C000C2366 /* ComposableArchitecture */; };
+		CA23A8172CD7A8C3000C2366 /* ci_post_clone.sh in Resources */ = {isa = PBXBuildFile; fileRef = CA23A8152CD7A8C3000C2366 /* ci_post_clone.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA23A8152CD7A8C3000C2366 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		CAD169C32CD74CAB00647FE2 /* MotionInsight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionInsight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -34,9 +36,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA23A8162CD7A8C3000C2366 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				CA23A8152CD7A8C3000C2366 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		CAD169BA2CD74CAB00647FE2 = {
 			isa = PBXGroup;
 			children = (
+				CA23A8162CD7A8C3000C2366 /* ci_scripts */,
 				CAD169C52CD74CAB00647FE2 /* MotionInsight */,
 				CAD169C42CD74CAB00647FE2 /* Products */,
 			);
@@ -118,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA23A8172CD7A8C3000C2366 /* ci_post_clone.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
