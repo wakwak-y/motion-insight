@@ -1,0 +1,21 @@
+PODS:
+  - Math (1.0.0)
+
+DEPENDENCIES:
+  - "Math (from `git@github.com:wakwak-y/Math.git`)"
+
+EXTERNAL SOURCES:
+  Math:
+    :git: "git@github.com:wakwak-y/Math.git"
+
+CHECKOUT OPTIONS:
+  Math:
+    :commit: f0072c9985d8db30e54a38aefd984c0a179e0087
+    :git: "git@github.com:wakwak-y/Math.git"
+
+SPEC CHECKSUMS:
+  Math: 6d5744ed7ae64d5ab4ee68ec74ececb8889dd92f
+
+PODFILE CHECKSUM: 3c4dd47c4a82b7a858a91e7d7c47a2b196265a55
+
+COCOAPODS: 1.16.2

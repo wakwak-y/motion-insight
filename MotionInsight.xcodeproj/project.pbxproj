@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		CA23A8112CD77D1C000C2366 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA23A8102CD77D1C000C2366 /* ComposableArchitecture */; };
 		CA23A8172CD7A8C3000C2366 /* ci_post_clone.sh in Resources */ = {isa = PBXBuildFile; fileRef = CA23A8152CD7A8C3000C2366 /* ci_post_clone.sh */; };
+		E0F176D30C31E7A4629E9A4E /* Pods_MotionInsight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFD637112DFE4FD78D6202B /* Pods_MotionInsight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21476EC3627ABDFDFC3D729B /* Pods-MotionInsight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionInsight.release.xcconfig"; path = "Target Support Files/Pods-MotionInsight/Pods-MotionInsight.release.xcconfig"; sourceTree = "<group>"; };
+		9AFD637112DFE4FD78D6202B /* Pods_MotionInsight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotionInsight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA23A8152CD7A8C3000C2366 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		CA23A84F2CE9C9D1000C2366 /* Math.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Math.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD169C32CD74CAB00647FE2 /* MotionInsight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionInsight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D195DAF416267EE4EB87DBE8 /* Pods-MotionInsight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionInsight.debug.xcconfig"; path = "Target Support Files/Pods-MotionInsight/Pods-MotionInsight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -30,12 +35,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA23A8112CD77D1C000C2366 /* ComposableArchitecture in Frameworks */,
+				E0F176D30C31E7A4629E9A4E /* Pods_MotionInsight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D7931F4C4BD9044CA39D0BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D195DAF416267EE4EB87DBE8 /* Pods-MotionInsight.debug.xcconfig */,
+				21476EC3627ABDFDFC3D729B /* Pods-MotionInsight.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA23A8162CD7A8C3000C2366 /* ci_scripts */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +65,8 @@
 				CA23A8162CD7A8C3000C2366 /* ci_scripts */,
 				CAD169C52CD74CAB00647FE2 /* MotionInsight */,
 				CAD169C42CD74CAB00647FE2 /* Products */,
+				6D7931F4C4BD9044CA39D0BE /* Pods */,
+				F06C36ABCA5156EC9DBFF6D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +78,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F06C36ABCA5156EC9DBFF6D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA23A84F2CE9C9D1000C2366 /* Math.framework */,
+				9AFD637112DFE4FD78D6202B /* Pods_MotionInsight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAD169D12CD74CAD00647FE2 /* Build configuration list for PBXNativeTarget "MotionInsight" */;
 			buildPhases = (
+				FC89CDCB661F5A2504ACE4AC /* [CP] Check Pods Manifest.lock */,
 				CAD169BF2CD74CAB00647FE2 /* Sources */,
 				CAD169C02CD74CAB00647FE2 /* Frameworks */,
 				CAD169C12CD74CAB00647FE2 /* Resources */,
+				9D751718BE06A5F66134CC67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D751718BE06A5F66134CC67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MotionInsight/Pods-MotionInsight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MotionInsight/Pods-MotionInsight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MotionInsight/Pods-MotionInsight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC89CDCB661F5A2504ACE4AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotionInsight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CAD169BF2CD74CAB00647FE2 /* Sources */ = {
@@ -269,6 +339,7 @@
 		};
 		CAD169D22CD74CAD00647FE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D195DAF416267EE4EB87DBE8 /* Pods-MotionInsight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,6 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MotionInsight/Preview Content\"";
 				DEVELOPMENT_TEAM = 93SMW9VKD8;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,6 +371,7 @@
 		};
 		CAD169D32CD74CAD00647FE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21476EC3627ABDFDFC3D729B /* Pods-MotionInsight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +380,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MotionInsight/Preview Content\"";
 				DEVELOPMENT_TEAM = 93SMW9VKD8;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
